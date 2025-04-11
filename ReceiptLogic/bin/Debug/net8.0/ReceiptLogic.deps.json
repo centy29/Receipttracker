@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ReceiptLogic/1.0.0": {
+        "dependencies": {
+          "ReceiptDataLayer": "1.0.0"
+        },
+        "runtime": {
+          "ReceiptLogic.dll": {}
+        }
+      },
+      "ReceiptDataLayer/1.0.0": {
+        "runtime": {
+          "ReceiptDataLayer.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ReceiptLogic/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ReceiptDataLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
