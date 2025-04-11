@@ -19,25 +19,21 @@ namespace recieptlogic
                     receipts.RemoveAt(i);
                     return true;
             }
-          } return false;
-
-
-                
+          } return false;//next update:  notifies the user the details of the selected invoice
         }
-        //PROCESSING LOGIC BL/DL
-        //MORE UPDATE: THE USER WILL BE REMINDED THE LATEST INPUT IN THE LIST AND CAN CHOOSE WHAT TO REMOVE
+
         public static bool UpdateReceipt(int invoice, string newBrand, string newAddress, int newTin, double newAmount)
         {
             for (int i = 0; i < receipts.Count; i++)
             {
-                if (receipts[i].invoice == invoice)
+                if (receipts[i].invoice == invoice)// scanning if there is the entered invoice in the list
                 {
                     receipts[i] = (newBrand, newAddress, newTin, invoice, newAmount);
                     return true;
                 }
             }
             return false;
-        }
+        }// future update: makikita yung details ng invoice after updating
 
 
     }
