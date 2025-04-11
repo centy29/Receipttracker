@@ -15,7 +15,7 @@ namespace reciepttracker
 
             ReceiptDatas receiptdata = new ReceiptDatas();
 
-            string pin = string.Empty;
+            string pin = string.Empty;// means string has no value
             string name = string.Empty;
             do
             {
@@ -23,16 +23,18 @@ namespace reciepttracker
                 Console.Write("ENTER PIN: ");
                 pin = Console.ReadLine();
 
-                if (!receiptdata.ValidateAccount(pin))
+                name = receiptdata.Getusername(pin); //get the name using the pin in the account in the list
+
+                if (name == null)
                 {
                     Console.WriteLine("------------------------------");
                     Console.WriteLine("ERROR!, ENTER THE CORRECT PIN!");
                 }
 
 
-            } while (!receiptdata.ValidateAccount(pin));//LOOP UNTIL THE USER ENTERS THE CORRECT PIN
+            } while (name == null);//LOOP UNTIL THE USER ENTERS THE CORRECT PIN
             Console.WriteLine("--------------------------");
-            Console.WriteLine("WELCOME TO RECEIPT TRACKER"+ name);
+            Console.WriteLine("WELCOME TO RECEIPT TRACKER: " + name); //display the users name upon entering the correct pin
 
             int userinput = 0;
 
@@ -57,10 +59,10 @@ namespace reciepttracker
                         Console.WriteLine("--------------------------------------");
                         Console.WriteLine("ENTER THE INVOICE YOU WANT TO REMOVE: ");
                         int removeInvoice = Convert.ToInt32(Console.ReadLine());
+
                         if (recieptbusinessdata.removemethod(removeInvoice))
                         {
                             Removereciept();//DISPLAY IF TRUE
-                                            //next update:  notifies the user the details of the selected invoice
                         }
                         else
                         {
@@ -80,7 +82,7 @@ namespace reciepttracker
                         break;
                     default:
                         Console.WriteLine("---------------------------------");
-                        Console.WriteLine("INVALID INPUT PLEASE CHOOSE NUMBER 1 TO 4");//TO REMIND THE USER TO CHOOSE ONLY 1 TO 4 IN OPTIONS
+                        Console.WriteLine("INVALID INPUT PLEASE CHOOSE NUMBER 1 TO 4");//TO REMIND THE USER TO CHOOSE ONLY 1 TO 5 IN OPTIONS
                         break;
 
                 }
@@ -184,7 +186,7 @@ namespace reciepttracker
             Console.WriteLine("Enter new Amount Spent:");
             double amount = Convert.ToDouble(Console.ReadLine());
 
-            bool updated = recieptbusinessdata.UpdateReceipt(invoice, brand, address, tin, amount);
+            bool updated = recieptbusinessdata.UpdateReceipt(invoice, brand, address, tin, amount);//condition if the receipt is updated or not
             if (updated)
             {
                 Console.WriteLine("Receipt updated successfully!");
