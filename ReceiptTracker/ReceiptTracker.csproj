@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ReceiptDataLayer\ReceiptDataLayer.csproj" />
+    <ProjectReference Include="..\ReceiptLogic\ReceiptLogic.csproj" />
+  </ItemGroup>
+
 </Project>
