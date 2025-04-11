@@ -1,0 +1,16 @@
+C:\Users\user\source\repos\ReceiptTracker\ReceiptLogic\bin\Debug\net8.0\ReceiptLogic.deps.json
+C:\Users\user\source\repos\ReceiptTracker\ReceiptLogic\bin\Debug\net8.0\ReceiptLogic.dll
+C:\Users\user\source\repos\ReceiptTracker\ReceiptLogic\bin\Debug\net8.0\ReceiptLogic.pdb
+C:\Users\user\source\repos\ReceiptTracker\ReceiptLogic\obj\Debug\net8.0\ReceiptLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\ReceiptTracker\ReceiptLogic\obj\Debug\net8.0\ReceiptLogic.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\ReceiptTracker\ReceiptLogic\obj\Debug\net8.0\ReceiptLogic.AssemblyInfo.cs
+C:\Users\user\source\repos\ReceiptTracker\ReceiptLogic\obj\Debug\net8.0\ReceiptLogic.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\ReceiptTracker\ReceiptLogic\obj\Debug\net8.0\ReceiptLogic.sourcelink.json
+C:\Users\user\source\repos\ReceiptTracker\ReceiptLogic\obj\Debug\net8.0\ReceiptLogic.dll
+C:\Users\user\source\repos\ReceiptTracker\ReceiptLogic\obj\Debug\net8.0\refint\ReceiptLogic.dll
+C:\Users\user\source\repos\ReceiptTracker\ReceiptLogic\obj\Debug\net8.0\ReceiptLogic.pdb
+C:\Users\user\source\repos\ReceiptTracker\ReceiptLogic\obj\Debug\net8.0\ref\ReceiptLogic.dll
+C:\Users\user\source\repos\ReceiptTracker\ReceiptLogic\obj\Debug\net8.0\ReceiptLogic.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\ReceiptTracker\ReceiptLogic\bin\Debug\net8.0\ReceiptDataLayer.dll
+C:\Users\user\source\repos\ReceiptTracker\ReceiptLogic\bin\Debug\net8.0\ReceiptDataLayer.pdb
+C:\Users\user\source\repos\ReceiptTracker\ReceiptLogic\obj\Debug\net8.0\ReceiptL.9BF68BDE.Up2Date
