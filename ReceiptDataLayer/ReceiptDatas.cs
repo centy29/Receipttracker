@@ -42,6 +42,17 @@ namespace ReceiptDataLayer
             }
             return false;
         }
+        public string Getusername(string pin) { // method for the pin gets the name in the account
+
+            foreach (var account in accounts) {
+
+                if (account.pin == pin) {
+
+                    return account.name;
+                }
+            }
+            return null;
+        }
        
 
     }
