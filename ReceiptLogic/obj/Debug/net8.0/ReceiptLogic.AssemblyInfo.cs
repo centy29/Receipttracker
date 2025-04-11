@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ReceiptLogic")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fc71d5a03e0fef7177f5598b6608e789474be7fd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4345711a14a68c12c847b4e971277a9818c4c3e8")]
 [assembly: System.Reflection.AssemblyProductAttribute("ReceiptLogic")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ReceiptLogic")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
