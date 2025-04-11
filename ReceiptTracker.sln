@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35825.156 d17.13
+VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceiptTracker", "ReceiptTracker\ReceiptTracker.csproj", "{80FFAD2D-1515-40D1-BC10-5FAB103E126B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceiptLogic", "ReceiptLogic\ReceiptLogic.csproj", "{6BFA504A-621A-48C7-8EC4-5973DE16A501}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceiptDataLayer", "ReceiptDataLayer\ReceiptDataLayer.csproj", "{35742ED1-DE6E-453F-A3B5-528B5CE7C102}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{80FFAD2D-1515-40D1-BC10-5FAB103E126B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80FFAD2D-1515-40D1-BC10-5FAB103E126B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80FFAD2D-1515-40D1-BC10-5FAB103E126B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BFA504A-621A-48C7-8EC4-5973DE16A501}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BFA504A-621A-48C7-8EC4-5973DE16A501}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BFA504A-621A-48C7-8EC4-5973DE16A501}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BFA504A-621A-48C7-8EC4-5973DE16A501}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35742ED1-DE6E-453F-A3B5-528B5CE7C102}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35742ED1-DE6E-453F-A3B5-528B5CE7C102}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35742ED1-DE6E-453F-A3B5-528B5CE7C102}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35742ED1-DE6E-453F-A3B5-528B5CE7C102}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
