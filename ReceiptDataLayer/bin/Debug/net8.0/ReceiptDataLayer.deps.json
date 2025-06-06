@@ -7,14 +7,30 @@
   "targets": {
     ".NETCoreApp,Version=v8.0": {
       "ReceiptDataLayer/1.0.0": {
+        "dependencies": {
+          "ReceiptCommon": "1.0.0"
+        },
         "runtime": {
           "ReceiptDataLayer.dll": {}
+        }
+      },
+      "ReceiptCommon/1.0.0": {
+        "runtime": {
+          "ReceiptCommon.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
   },
   "libraries": {
     "ReceiptDataLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ReceiptCommon/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
