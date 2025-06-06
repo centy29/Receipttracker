@@ -19,3 +19,5 @@ C:\Users\user\source\repos\ReceiptTracker\ReceiptTracker\obj\Debug\net8.0\Receip
 C:\Users\user\source\repos\ReceiptTracker\ReceiptTracker\obj\Debug\net8.0\ref\ReceiptTracker.dll
 C:\Users\user\source\repos\ReceiptTracker\ReceiptTracker\bin\Debug\net8.0\ReceiptDataLayer.dll
 C:\Users\user\source\repos\ReceiptTracker\ReceiptTracker\bin\Debug\net8.0\ReceiptDataLayer.pdb
+C:\Users\user\source\repos\ReceiptTracker\ReceiptTracker\bin\Debug\net8.0\ReceiptCommon.dll
+C:\Users\user\source\repos\ReceiptTracker\ReceiptTracker\bin\Debug\net8.0\ReceiptCommon.pdb
