@@ -14,3 +14,5 @@ C:\Users\user\source\repos\ReceiptTracker\ReceiptLogic\obj\Debug\net8.0\ReceiptL
 C:\Users\user\source\repos\ReceiptTracker\ReceiptLogic\bin\Debug\net8.0\ReceiptDataLayer.dll
 C:\Users\user\source\repos\ReceiptTracker\ReceiptLogic\bin\Debug\net8.0\ReceiptDataLayer.pdb
 C:\Users\user\source\repos\ReceiptTracker\ReceiptLogic\obj\Debug\net8.0\ReceiptL.9BF68BDE.Up2Date
+C:\Users\user\source\repos\ReceiptTracker\ReceiptLogic\bin\Debug\net8.0\ReceiptCommon.dll
+C:\Users\user\source\repos\ReceiptTracker\ReceiptLogic\bin\Debug\net8.0\ReceiptCommon.pdb
