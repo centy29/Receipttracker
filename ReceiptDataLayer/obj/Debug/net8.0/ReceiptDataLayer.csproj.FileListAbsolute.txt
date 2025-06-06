@@ -10,3 +10,7 @@ C:\Users\user\source\repos\ReceiptTracker\ReceiptDataLayer\obj\Debug\net8.0\Rece
 C:\Users\user\source\repos\ReceiptTracker\ReceiptDataLayer\obj\Debug\net8.0\refint\ReceiptDataLayer.dll
 C:\Users\user\source\repos\ReceiptTracker\ReceiptDataLayer\obj\Debug\net8.0\ReceiptDataLayer.pdb
 C:\Users\user\source\repos\ReceiptTracker\ReceiptDataLayer\obj\Debug\net8.0\ref\ReceiptDataLayer.dll
+C:\Users\user\source\repos\ReceiptTracker\ReceiptDataLayer\bin\Debug\net8.0\ReceiptCommon.dll
+C:\Users\user\source\repos\ReceiptTracker\ReceiptDataLayer\bin\Debug\net8.0\ReceiptCommon.pdb
+C:\Users\user\source\repos\ReceiptTracker\ReceiptDataLayer\obj\Debug\net8.0\ReceiptDataLayer.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\ReceiptTracker\ReceiptDataLayer\obj\Debug\net8.0\ReceiptD.6B453B38.Up2Date
