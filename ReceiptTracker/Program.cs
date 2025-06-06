@@ -13,7 +13,7 @@ namespace reciepttracker
 
             Console.WriteLine("WELCOME TO RECEIPT TRACKER");
 
-            ReceiptDatas receiptdata = new ReceiptDatas();
+            ReceiptDataLayer.ReceiptData receiptdata = new ReceiptDataLayer.ReceiptData();
 
             string pin = string.Empty;// means string has no value
             string name = string.Empty;
@@ -74,7 +74,7 @@ namespace reciepttracker
                         retrievereciept();//TO DISPLAY THE HISTORY INPUT 
                         break;
                     case 4: //updating method
-                           UpdateReceipt();
+                        UpdateReceipt();
                         break;
                     case 5: //exit method
                         Console.WriteLine("---------------------------------");
@@ -118,23 +118,23 @@ namespace reciepttracker
             Console.WriteLine("ADD THE RECEIPT DETAILS");
 
             Console.WriteLine("------------------------");
-            Console.WriteLine("ENTER INVOICE NUMBER");
+            Console.Write("ENTER INVOICE NUMBER:");
             int invoice = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("------------------------");
-            Console.WriteLine("ENTER THE BRAND NAME");
+            Console.Write("ENTER THE BRAND NAME:");
             string brand = Console.ReadLine();
 
             Console.WriteLine("------------------------");
-            Console.WriteLine("ENTER THE ADDRESS");
+            Console.Write("ENTER THE ADDRESS:");
             string address = Console.ReadLine();
 
             Console.WriteLine("------------------------");
-            Console.WriteLine("ENTER TIN ID NUMBER");
+            Console.Write("ENTER TIN ID NUMBER:");
             int tin = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("------------------------");
-            Console.WriteLine("ENTER THE AMOUNT SPENT");
+            Console.Write("ENTER THE AMOUNT SPENT:");
             double amount = Convert.ToInt32(Console.ReadLine());
 
             recieptlogic.recieptbusinessdata.receipts.Add((brand, address, tin, invoice, amount));// a method for adding the input from here to store in the list
@@ -146,20 +146,22 @@ namespace reciepttracker
 
         static void retrievereciept()//method for history option
         {
-            if (recieptlogic.recieptbusinessdata.receipts.Count == 0) {
+            if (recieptlogic.recieptbusinessdata.receipts.Count == 0)
+            {
                 Console.WriteLine("-------------------------------");
-                Console.WriteLine("There are no recorded receipts!");
+                Console.WriteLine("THERE ARE NO RECORD OF RECIEPTS!");
+                Console.WriteLine("-------------------------------");
                 return;
             }
 
             foreach (var expense in recieptlogic.recieptbusinessdata.receipts)//USED TO DISPLAY THE LIST OF EXPENSES NA NAINPUT OR NA ADD
             {
                 Console.WriteLine("-----------------------");
-                Console.WriteLine("THE INVOICE: " + expense.invoice);
-                Console.WriteLine("THE BRAND: " + expense.brand);
-                Console.WriteLine("THE ADDRESS: " + expense.address);
-                Console.WriteLine("THE TIN: " + expense.tin);
-                Console.WriteLine("THE AMOUNT: " + expense.amount);
+                Console.Write("THE INVOICE: " + expense.invoice);
+                Console.Write("THE BRAND: " + expense.brand);
+                Console.Write("THE ADDRESS: " + expense.address);
+                Console.Write("THE TIN: " + expense.tin);
+                Console.Write("THE AMOUNT: " + expense.amount);
                 Console.WriteLine("-----------------------");
             }
         } //MORE UPDATE: CAN CHOOSE THE ITEM THEY WANT A HISTORY OR SHOWS ALL THE ITEMS STORED IN THE LIST
@@ -167,36 +169,39 @@ namespace reciepttracker
         static void UpdateReceipt()
         {
             Console.WriteLine("-------------------------------");
-            Console.WriteLine("Enter Invoice Number to update:");//next update: selectable and list instead na mag input ng mahabang invoice
+            Console.Write("Enter Invoice Number to update:");//next update: selectable and list instead na mag input ng mahabang invoice
             int invoice = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("-------------------------------");
-            Console.WriteLine("Enter new Brand Name:");
+            Console.Write("Enter new Brand Name:");
             string brand = Console.ReadLine();
 
             Console.WriteLine("-------------------------------");
-            Console.WriteLine("Enter new Address:");
+            Console.Write("Enter new Address:");
             string address = Console.ReadLine();
 
             Console.WriteLine("-------------------------------");
-            Console.WriteLine("Enter new TIN Number:");
+            Console.Write("Enter new TIN Number:");
             int tin = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("-------------------------------");
-            Console.WriteLine("Enter new Amount Spent:");
+            Console.Write("Enter new Amount Spent:");
             double amount = Convert.ToDouble(Console.ReadLine());
 
             bool updated = recieptbusinessdata.UpdateReceipt(invoice, brand, address, tin, amount);//condition if the receipt is updated or not
             if (updated)
             {
+                Console.WriteLine("-------------------------------");
                 Console.WriteLine("Receipt updated successfully!");
+                Console.WriteLine("-------------------------------");
             }
             else
             {
+                Console.WriteLine("-------------------------------------------");
                 Console.WriteLine("Receipt with that invoice number not found.");
+                Console.WriteLine("-------------------------------------------");
             }
         }
 
     }
 }
-
