@@ -14,7 +14,18 @@
           "ReceiptLogic.dll": {}
         }
       },
+      "ReceiptCommon/1.0.0": {
+        "runtime": {
+          "ReceiptCommon.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "ReceiptDataLayer/1.0.0": {
+        "dependencies": {
+          "ReceiptCommon": "1.0.0"
+        },
         "runtime": {
           "ReceiptDataLayer.dll": {
             "assemblyVersion": "1.0.0.0",
@@ -26,6 +37,11 @@
   },
   "libraries": {
     "ReceiptLogic/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ReceiptCommon/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
