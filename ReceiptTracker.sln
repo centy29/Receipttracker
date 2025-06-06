@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceiptLogic", "ReceiptLogi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceiptDataLayer", "ReceiptDataLayer\ReceiptDataLayer.csproj", "{35742ED1-DE6E-453F-A3B5-528B5CE7C102}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceiptCommon", "ReceiptCommon\ReceiptCommon.csproj", "{26C9D802-89D3-4D4F-B0FC-CF8AA150C11C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{35742ED1-DE6E-453F-A3B5-528B5CE7C102}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35742ED1-DE6E-453F-A3B5-528B5CE7C102}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35742ED1-DE6E-453F-A3B5-528B5CE7C102}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26C9D802-89D3-4D4F-B0FC-CF8AA150C11C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26C9D802-89D3-4D4F-B0FC-CF8AA150C11C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26C9D802-89D3-4D4F-B0FC-CF8AA150C11C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26C9D802-89D3-4D4F-B0FC-CF8AA150C11C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
