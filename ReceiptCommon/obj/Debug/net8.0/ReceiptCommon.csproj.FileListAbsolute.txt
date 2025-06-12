@@ -10,3 +10,4 @@ C:\Users\user\source\repos\ReceiptTracker\ReceiptCommon\obj\Debug\net8.0\Receipt
 C:\Users\user\source\repos\ReceiptTracker\ReceiptCommon\obj\Debug\net8.0\refint\ReceiptCommon.dll
 C:\Users\user\source\repos\ReceiptTracker\ReceiptCommon\obj\Debug\net8.0\ReceiptCommon.pdb
 C:\Users\user\source\repos\ReceiptTracker\ReceiptCommon\obj\Debug\net8.0\ref\ReceiptCommon.dll
+C:\Users\user\source\repos\ReceiptTracker\ReceiptCommon\obj\Debug\net8.0\ReceiptCommon.csproj.AssemblyReference.cache
