@@ -12,10 +12,10 @@ namespace ReceiptDataLayer
         public List<ReceiptAccounts> accounts = new List<ReceiptAccounts>();
         public ReceiptData()
         {
-            Receiptacc = new InMemoryReceiptDatas();
+            //Receiptacc = new InMemoryReceiptDatas();
             // Receiptacc = new TxtFileReceiptDatas();
             //Receiptacc = new JsonFileReceiptDatas();
-
+            Receiptacc = new DBReceiptData();
         }
         public List<ReceiptAccounts> GetAllAccounts()
         {
