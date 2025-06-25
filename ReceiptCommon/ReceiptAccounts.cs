@@ -10,7 +10,6 @@ namespace ReceiptCommon
     {
         public string pin { get; set; }
         public string name { get; set; }
-
-
+      
     }
 }
