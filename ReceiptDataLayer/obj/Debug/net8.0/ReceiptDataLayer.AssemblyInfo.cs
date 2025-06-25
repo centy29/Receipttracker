@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ReceiptDataLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8d4a28fb78504d19eb73896d01496fb6ad4c48fc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+64a8b75d317d0c373c230eb2741412886841aadc")]
 [assembly: System.Reflection.AssemblyProductAttribute("ReceiptDataLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ReceiptDataLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
