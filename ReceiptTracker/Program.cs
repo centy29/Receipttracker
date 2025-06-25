@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;// this is needed to recognize the list
+using ReceiptCommon;
 using ReceiptDataLayer;
 using recieptlogic;//method para ma call yung another class sa main class
 
@@ -135,43 +136,64 @@ namespace reciepttracker
 
             Console.WriteLine("------------------------");
             Console.Write("ENTER THE AMOUNT SPENT:");
-            double amount = Convert.ToInt32(Console.ReadLine());
+            Decimal amount = Convert.ToDecimal(Console.ReadLine());
 
-            recieptlogic.recieptbusinessdata.receipts.Add((brand, address, tin, invoice, amount));// a method for adding the input from here to store in the list
-            Console.WriteLine("-------------------------------");
-            Console.WriteLine("THE RECEIPT DETAILS ADDED SUCCESSFULLY");
-            Console.WriteLine("-------------------------------");
+            var DB = new ReceiptDataLayer.DBReceiptinfo();
+
+            var Receipt = new DBinfos
+            {
+                invoice = invoice,
+                brand = brand,
+                address = address,
+                tin = tin,
+                amount = amount
+            };
+            DB.addreceiptinfo(Receipt);
+
+            Console.WriteLine("-----------------------------------------------------");
+            Console.WriteLine("ALL THE INPUTS ARE SAVED IN THE DATABASE SUCCESSFULLY");
+
 
         } //MORE UPDATE: MAKE IT SAVED TO A DATABASE FOR EASY STORING AND SEE THE STORED DATA
 
         static void retrievereciept()//method for history option
         {
-            if (recieptlogic.recieptbusinessdata.receipts.Count == 0)
-            {
-                Console.WriteLine("-------------------------------");
-                Console.WriteLine("THERE ARE NO RECORD OF RECIEPTS!");
-                Console.WriteLine("-------------------------------");
-                return;
+            var DB = new ReceiptDataLayer.DBReceiptinfo();
+
+            var allreceipts = DB.GetAllRecieptInfos();
+
+            if (allreceipts.Count == 0) {
+                Console.WriteLine("--------------------------------------");
+                Console.WriteLine("THERE NO RECORDED RECEIPTS TO RETRIEVE");
+                Console.WriteLine("--------------------------------------");
             }
 
-            foreach (var expense in recieptlogic.recieptbusinessdata.receipts)//USED TO DISPLAY THE LIST OF EXPENSES NA NAINPUT OR NA ADD
-            {
-                Console.WriteLine("-----------------------");
-                Console.Write("THE INVOICE: " + expense.invoice);
-                Console.Write("THE BRAND: " + expense.brand);
-                Console.Write("THE ADDRESS: " + expense.address);
-                Console.Write("THE TIN: " + expense.tin);
-                Console.Write("THE AMOUNT: " + expense.amount);
-                Console.WriteLine("-----------------------");
+            foreach (var expense in allreceipts) {
+                Console.WriteLine("--------------------------------------");
+                Console.WriteLine("INVOICE: "+expense.invoice);
+                Console.WriteLine("BRAND: " + expense.brand);
+                Console.WriteLine("ADDRESS " + expense.address);
+                Console.WriteLine("TIN: " + expense.tin);
+                Console.WriteLine("AMOUNT: " + expense.amount);
+                Console.WriteLine("--------------------------------------");
             }
-        } //MORE UPDATE: CAN CHOOSE THE ITEM THEY WANT A HISTORY OR SHOWS ALL THE ITEMS STORED IN THE LIST
+            return;
+        } 
 
         static void UpdateReceipt()
         {
+            var DB = new ReceiptDataLayer.DBReceiptinfo();
             Console.WriteLine("-------------------------------");
             Console.Write("Enter Invoice Number to update:");//next update: selectable and list instead na mag input ng mahabang invoice
             int invoice = Convert.ToInt32(Console.ReadLine());
 
+            var receipt = DB.GetInvoice(invoice);
+            if (receipt == null) {
+                Console.WriteLine("--------------------------------------");
+                Console.WriteLine("RECEIPT WITH THAT INVOICE IS NOT FOUND!");
+                Console.WriteLine("--------------------------------------");
+            }
+            
             Console.WriteLine("-------------------------------");
             Console.Write("Enter new Brand Name:");
             string brand = Console.ReadLine();
@@ -188,19 +210,13 @@ namespace reciepttracker
             Console.Write("Enter new Amount Spent:");
             double amount = Convert.ToDouble(Console.ReadLine());
 
-            bool updated = recieptbusinessdata.UpdateReceipt(invoice, brand, address, tin, amount);//condition if the receipt is updated or not
-            if (updated)
+            DB.addreceiptinfo(receipt);
             {
                 Console.WriteLine("-------------------------------");
                 Console.WriteLine("Receipt updated successfully!");
                 Console.WriteLine("-------------------------------");
             }
-            else
-            {
-                Console.WriteLine("-------------------------------------------");
-                Console.WriteLine("Receipt with that invoice number not found.");
-                Console.WriteLine("-------------------------------------------");
-            }
+           
         }
 
     }
