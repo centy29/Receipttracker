@@ -11,7 +11,7 @@ namespace ReceiptDataLayer
 {
     class DBReceiptData : IReceiptAccounts {
 
-        static string connectionString
+        static string connectionString   // Connection string for SQL Server connection
       = "Data Source =centy\\SQLEXPRESS; Initial Catalog = DBReceiptDatas; Integrated Security = True; TrustServerCertificate=True;";
 
         static SqlConnection sqlConnection;
@@ -20,7 +20,8 @@ namespace ReceiptDataLayer
             sqlConnection = new SqlConnection(connectionString);
         }
         public List<ReceiptAccounts> accounts = new List<ReceiptAccounts>();
-        public List<ReceiptAccounts> GetAccounts()
+
+        public List<ReceiptAccounts> GetAccounts()  // Method to retrieve all accounts from the Receipt table
         {
             string selectQuery = "SELECT Pin, Name FROM Receipt";
             SqlCommand command = new SqlCommand(selectQuery, sqlConnection);
