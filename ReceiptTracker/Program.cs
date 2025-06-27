@@ -4,6 +4,7 @@ using ReceiptCommon;
 using ReceiptDataLayer;
 using recieptlogic;//method para ma call yung another class sa main class
 
+
 namespace reciepttracker
 {
     internal class recieptui
@@ -148,7 +149,7 @@ namespace reciepttracker
                 tin = tin,
                 amount = amount
             };
-            DB.addreceiptinfo(Receipt);
+            DB.AddReceipt(Receipt);
 
             Console.WriteLine("-----------------------------------------------------");
             Console.WriteLine("ALL THE INPUTS ARE SAVED IN THE DATABASE SUCCESSFULLY");
@@ -210,7 +211,7 @@ namespace reciepttracker
             Console.Write("Enter new Amount Spent:");
             double amount = Convert.ToDouble(Console.ReadLine());
 
-            DB.addreceiptinfo(receipt);
+            DB.AddReceipt(receipt);
             {
                 Console.WriteLine("-------------------------------");
                 Console.WriteLine("Receipt updated successfully!");
