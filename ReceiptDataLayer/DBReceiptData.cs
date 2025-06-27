@@ -9,7 +9,7 @@ using Microsoft.Data.SqlClient;
 
 namespace ReceiptDataLayer
 {
-    class DBReceiptData : IReceiptAccounts {
+     public class DBReceiptData : IReceiptAccounts {
 
         static string connectionString   // Connection string for SQL Server connection
       = "Data Source =centy\\SQLEXPRESS; Initial Catalog = DBReceiptDatas; Integrated Security = True; TrustServerCertificate=True;";
