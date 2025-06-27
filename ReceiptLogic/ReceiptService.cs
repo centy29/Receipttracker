@@ -17,8 +17,8 @@ namespace ReceiptLogic
             var existing = data.GetInvoice(invoice);
             if (existing == null) return false;
 
-            updated.invoice = invoice; // Ensure ID is preserved
-            return data.UpdateReceipt(updated);
+            updated.invoice = invoice; 
+            return data.UpdateReceipt(updated); //call yung updatereceipt if tru
         }
 
         public bool Remove(int invoice) => data.DeleteReceipt(invoice);
