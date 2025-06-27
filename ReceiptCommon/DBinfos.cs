@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ReceiptCommon
+﻿namespace ReceiptCommon
 {
     public class DBinfos
     {
@@ -13,6 +7,5 @@ namespace ReceiptCommon
         public string address { get; set; }
         public int tin { get; set; }
         public decimal amount { get; set; }
-       
     }
 }
