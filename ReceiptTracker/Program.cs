@@ -139,7 +139,7 @@ namespace reciepttracker
             Console.Write("ENTER THE AMOUNT SPENT:");
             Decimal amount = Convert.ToDecimal(Console.ReadLine());
 
-            var DB = new ReceiptDataLayer.DBReceiptinfo();
+            var DB = new ReceiptDataLayer.DBReceiptinfo(); //contructor para maconnect sa database
 
             var Receipt = new DBinfos
             {
@@ -155,7 +155,7 @@ namespace reciepttracker
             Console.WriteLine("ALL THE INPUTS ARE SAVED IN THE DATABASE SUCCESSFULLY");
 
 
-        } //MORE UPDATE: MAKE IT SAVED TO A DATABASE FOR EASY STORING AND SEE THE STORED DATA
+        }
 
         static void retrievereciept()//method for history option
         {
@@ -185,10 +185,10 @@ namespace reciepttracker
         {
             var DB = new ReceiptDataLayer.DBReceiptinfo();
             Console.WriteLine("-------------------------------");
-            Console.Write("Enter Invoice Number to update:");//next update: selectable and list instead na mag input ng mahabang invoice
+            Console.Write("Enter Invoice Number to update:");
             int invoice = Convert.ToInt32(Console.ReadLine());
 
-            var receipt = DB.GetInvoice(invoice);
+            var receipt = DB.GetInvoice(invoice); //check yung receipt using invoice
             if (receipt == null) {
                 Console.WriteLine("--------------------------------------");
                 Console.WriteLine("RECEIPT WITH THAT INVOICE IS NOT FOUND!");
