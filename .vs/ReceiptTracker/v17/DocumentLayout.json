@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\ReceiptTracker\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{35742ED1-DE6E-453F-A3B5-528B5CE7C102}|ReceiptDataLayer\\ReceiptDataLayer.csproj|c:\\users\\user\\source\\repos\\receipttracker\\receiptdatalayer\\dbreceiptinfos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35742ED1-DE6E-453F-A3B5-528B5CE7C102}|ReceiptDataLayer\\ReceiptDataLayer.csproj|solutionrelative:receiptdatalayer\\dbreceiptinfos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26C9D802-89D3-4D4F-B0FC-CF8AA150C11C}|ReceiptCommon\\ReceiptCommon.csproj|c:\\users\\user\\source\\repos\\receipttracker\\receiptcommon\\dbinfos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26C9D802-89D3-4D4F-B0FC-CF8AA150C11C}|ReceiptCommon\\ReceiptCommon.csproj|solutionrelative:receiptcommon\\dbinfos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35742ED1-DE6E-453F-A3B5-528B5CE7C102}|ReceiptDataLayer\\ReceiptDataLayer.csproj|c:\\users\\user\\source\\repos\\receipttracker\\receiptdatalayer\\dbreceiptdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35742ED1-DE6E-453F-A3B5-528B5CE7C102}|ReceiptDataLayer\\ReceiptDataLayer.csproj|solutionrelative:receiptdatalayer\\dbreceiptdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,50 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DBReceiptData.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ReceiptTracker\\ReceiptDataLayer\\DBReceiptData.cs",
-              "RelativeDocumentMoniker": "ReceiptDataLayer\\DBReceiptData.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\ReceiptTracker\\ReceiptDataLayer\\DBReceiptData.cs",
-              "RelativeToolTip": "ReceiptDataLayer\\DBReceiptData.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAuwG8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T10:41:24.762Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DBReceiptinfos.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ReceiptTracker\\ReceiptDataLayer\\DBReceiptinfos.cs",
-              "RelativeDocumentMoniker": "ReceiptDataLayer\\DBReceiptinfos.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\ReceiptTracker\\ReceiptDataLayer\\DBReceiptinfos.cs",
-              "RelativeToolTip": "ReceiptDataLayer\\DBReceiptinfos.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAIwB8AAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T08:49:08.633Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DBinfos.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ReceiptTracker\\ReceiptCommon\\DBinfos.cs",
-              "RelativeDocumentMoniker": "ReceiptCommon\\DBinfos.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\ReceiptTracker\\ReceiptCommon\\DBinfos.cs*",
-              "RelativeToolTip": "ReceiptCommon\\DBinfos.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T10:45:37.09Z",
-              "EditorCaption": ""
             }
           ]
         }
