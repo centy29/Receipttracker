@@ -1,0 +1,96 @@
+[
+  {
+    "ContainingType": "ReceiptTrackerAPI.Controllers.ReceiptController",
+    "Method": "GetAll",
+    "RelativePath": "api/Receipt",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ReceiptCommon.DBinfos, ReceiptCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ReceiptTrackerAPI.Controllers.ReceiptController",
+    "Method": "Add",
+    "RelativePath": "api/Receipt",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "receipt",
+        "Type": "ReceiptCommon.DBinfos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ReceiptTrackerAPI.Controllers.ReceiptController",
+    "Method": "Update",
+    "RelativePath": "api/Receipt/{invoice}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "invoice",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "receipt",
+        "Type": "ReceiptCommon.DBinfos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ReceiptTrackerAPI.Controllers.ReceiptController",
+    "Method": "Delete",
+    "RelativePath": "api/Receipt/{invoice}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "invoice",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ReceiptController.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ReceiptController.WeatherForecast, ReceiptController, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]
