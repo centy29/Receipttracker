@@ -9,7 +9,7 @@ namespace ReceiptTrackerAPI.Controllers
     [Route("api/[controller]")]
     public class ReceiptController : ControllerBase
     {
-        private readonly ReceiptService _service = new ReceiptService();
+        private readonly ReceiptService _service = new ReceiptService(); //read yung receiptservice
 
         [HttpGet]
         public ActionResult<IEnumerable<DBinfos>> GetAll()
