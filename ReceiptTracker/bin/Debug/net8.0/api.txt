@@ -1,0 +1,303 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using ReceiptCommon;
+using Microsoft.Data.Sql;
+using Microsoft.Data.SqlClient;
+
+namespace ReceiptDataLayer
+{
+     public class DBReceiptData : IReceiptAccounts {
+
+        static string connectionString   // Connection string for SQL Server connection
+      = "Data Source =centy\\SQLEXPRESS; Initial Catalog = DBReceiptDatas; Integrated Security = True; TrustServerCertificate=True;";
+
+        static SqlConnection sqlConnection;
+    
+    public DBReceiptData() {
+            sqlConnection = new SqlConnection(connectionString);
+        }
+        public List<ReceiptAccounts> accounts = new List<ReceiptAccounts>();
+
+        public List<ReceiptAccounts> GetAccounts()  // Method to retrieve all accounts from the Receipt table
+        {
+            string selectQuery = "SELECT Pin, Name FROM Receipt";
+            SqlCommand command = new SqlCommand(selectQuery, sqlConnection);
+
+            sqlConnection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+
+            List<ReceiptAccounts> accounts = new List<ReceiptAccounts>();
+
+            while (reader.Read())
+            {
+                accounts.Add(new ReceiptAccounts
+                {
+                    pin = reader["Pin"].ToString(),
+                    name = reader["Name"].ToString()
+                });
+            }
+
+            sqlConnection.Close();
+            return accounts;
+        }
+        public void createaccount(ReceiptAccounts account)
+        {
+            string insertQuery = "INSERT INTO Receipt (Pin, Name) VALUES (@Pin, @Name)";
+            SqlCommand command = new SqlCommand(insertQuery, sqlConnection);
+
+            command.Parameters.AddWithValue("@Pin", account.pin);
+            command.Parameters.AddWithValue("@Name", account.name);
+
+            sqlConnection.Open();
+            command.ExecuteNonQuery();
+            sqlConnection.Close();
+        }
+        public void removeaccount(ReceiptAccounts account)
+        {
+            string deleteQuery = "DELETE FROM Receipt WHERE Pin = @Pin";
+            SqlCommand command = new SqlCommand(deleteQuery, sqlConnection);
+
+            command.Parameters.AddWithValue("@Pin", account.pin);
+
+            sqlConnection.Open();
+            command.ExecuteNonQuery();
+            sqlConnection.Close();
+        }
+        public void updateaccount(ReceiptAccounts account)
+        {
+            string updateQuery = "UPDATE Receipt SET Name = @Name WHERE Pin = @Pin";
+            SqlCommand command = new SqlCommand(updateQuery, sqlConnection);
+
+            command.Parameters.AddWithValue("@Pin", account.pin);
+            command.Parameters.AddWithValue("@Name", account.name);
+
+            sqlConnection.Open();
+            command.ExecuteNonQuery();
+            sqlConnection.Close();
+        }
+        public void retrieveaccount(ReceiptAccounts account)
+        {
+
+        }
+        public bool ValidateAccount(string pin)
+        {
+            string query = "SELECT COUNT(*) FROM Receipt WHERE Pin = @Pin";
+            SqlCommand command = new SqlCommand(query, sqlConnection);
+            command.Parameters.AddWithValue("@Pin", pin);
+
+            sqlConnection.Open();
+            int count = (int)command.ExecuteScalar();
+            sqlConnection.Close();
+
+            return count > 0;
+        }
+        public string Getusername(string pin)
+        {
+            string query = "SELECT Name FROM Receipt WHERE Pin = @Pin";
+            SqlCommand command = new SqlCommand(query, sqlConnection);
+            command.Parameters.AddWithValue("@Pin", pin);
+
+            sqlConnection.Open();
+            string name = command.ExecuteScalar() as string;
+            sqlConnection.Close();
+
+            return name;
+        }
+
+    }
+}
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using ReceiptCommon;
+using Microsoft.Data.Sql;
+using Microsoft.Data.SqlClient;
+
+namespace ReceiptDataLayer
+{
+   public class DBReceiptinfo
+    {
+
+        static string connectionString   // Connection string for SQL Server connection
+      = "Data Source =centy\\SQLEXPRESS; Initial Catalog = DBReceiptDatas; Integrated Security = True; TrustServerCertificate=True;";
+
+        static SqlConnection sqlConnection;
+
+        public DBReceiptinfo()
+        {
+            sqlConnection = new SqlConnection(connectionString);
+        }
+        public List<DBinfos> receipt = new List<DBinfos>();
+
+        public List<DBinfos> GetAllRecieptInfos ()  // Method to retrieve all accounts from the Receipt table
+        {
+            string selectQuery = "SELECT invoice, brand, address, tin, amount FROM ReceiptsInfo";
+            SqlCommand command = new SqlCommand(selectQuery, sqlConnection);
+
+            sqlConnection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+
+            List<DBinfos> infos = new List<DBinfos>();
+
+            while (reader.Read())
+            {
+                infos.Add(new DBinfos
+                {
+                   invoice = Convert.ToInt32(reader["invoice"]),
+                    brand = reader["brand"].ToString(),
+                    address = reader["address"].ToString(),
+                    tin = Convert.ToInt32(reader["tin"]),
+                    amount = Convert.ToDecimal(reader["amount"]),
+                  
+
+
+                });
+            }
+
+            sqlConnection.Close();
+            return infos;
+        }
+        public DBinfos GetInvoice(int invoice)
+        {
+            string query = "SELECT invoice, brand, address, tin, amount FROM ReceiptsInfo WHERE invoice = @invoice";
+            SqlCommand command = new SqlCommand(query, sqlConnection);
+            command.Parameters.AddWithValue("@invoice", invoice);
+
+
+            sqlConnection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+
+            DBinfos receipt = null;
+
+            if (reader.Read())
+            {
+                receipt = new DBinfos
+                {
+                    invoice = Convert.ToInt32(reader["invoice"]),
+                    brand = reader["brand"].ToString(),
+                    address = reader["address"].ToString(),
+                    tin = Convert.ToInt32(reader["tin"]),
+                    amount = Convert.ToDecimal(reader["amount"]),
+                    
+                };
+               
+            }
+            sqlConnection.Close();
+            return receipt;
+        }
+        public void addreceiptinfo(DBinfos receipt)
+        {
+            string insertQuery = "INSERT INTO ReceiptsInfo (invoice, brand, address, tin, amount) VALUES (@invoice, @brand, @address, @tin, @amount)";
+            SqlCommand command = new SqlCommand(insertQuery, sqlConnection);
+
+            command.Parameters.AddWithValue("@invoice", receipt.invoice);
+            command.Parameters.AddWithValue("@brand",receipt.brand );
+            command.Parameters.AddWithValue("@address", receipt.address);
+            command.Parameters.AddWithValue("@tin", receipt.tin);
+            command.Parameters.AddWithValue("@amount", receipt.amount);
+           
+
+            sqlConnection.Open();
+            command.ExecuteNonQuery();
+            sqlConnection.Close();
+        }
+        public void deleteReceiptInfo(DBinfos receipt)
+        {
+            string deleteQuery = "DELETE FROM ReceiptsInfo WHERE invoice = @invoice";
+            SqlCommand command = new SqlCommand(deleteQuery, sqlConnection);
+
+            command.Parameters.AddWithValue("@invoice", receipt.invoice);
+
+            sqlConnection.Open();
+            command.ExecuteNonQuery();
+            sqlConnection.Close();
+        }
+        public void updatereceiptinfo(DBinfos receipt)
+        {
+            string updateQuery = "UPDATE ReceiptsInfo SET brand = @brand, address = @address, tin = @tin, amount = @amount WHERE invoice = @invoice";
+            SqlCommand command = new SqlCommand(updateQuery, sqlConnection);
+
+            command.Parameters.AddWithValue("@invoice", receipt.invoice);
+            command.Parameters.AddWithValue("@brand", receipt.brand);
+            command.Parameters.AddWithValue("@address", receipt.address);
+            command.Parameters.AddWithValue("@tin", receipt.tin);
+            command.Parameters.AddWithValue("@amount", receipt.amount);
+            
+
+            sqlConnection.Open();
+            command.ExecuteNonQuery();
+            sqlConnection.Close();
+        }
+        public void retrieveaccount(ReceiptAccounts account)
+        {
+
+        }
+  
+
+    }
+}
+
+using Microsoft.AspNetCore.Mvc;
+using ReceiptCommon;
+using ReceiptLogic;
+using System.Collections.Generic;
+
+namespace ReceiptTrackerAPI.Controllers
+{
+    [ApiController]
+    [Route("api/[controller]")]
+    public class ReceiptController : ControllerBase
+    {
+        // Instance of the logic class
+        ReceiptService receiptService = new ReceiptService();
+
+        // GET: /api/receipt
+        [HttpGet]
+        public ActionResult<IEnumerable<APIReceipt>> ShowAll()
+        {
+            var data = receiptService.GetAll();
+            return Ok(data);
+        }
+
+        // POST: /api/receipt
+        [HttpPost]
+        public ActionResult Add([FromBody] APIReceipt r)
+        {
+            var success = receiptService.Add(r);
+            if (success)
+                return Ok("Receipt successfully added.");
+            else
+                return BadRequest("Failed to add.");
+        }
+
+        // PATCH: /api/receipt/{invoice}
+        [HttpPatch("{invoice}")]
+        public ActionResult Update(int invoice, [FromBody] APIReceipt updatedData)
+        {
+            var result = receiptService.Update(invoice, updatedData);
+            if (result)
+                return Ok("Receipt updated.");
+            else
+                return NotFound("No matching invoice found.");
+        }
+
+        // DELETE: /api/receipt/{invoice}
+        [HttpDelete("{invoice}")]
+        public ActionResult Delete(int invoice)
+        {
+            var removed = receiptService.Remove(invoice);
+            if (removed)
+                return Ok("Receipt deleted.");
+            else
+                return NotFound("Invalid invoice number.");
+        }
+    }
+}
+
+connect this API to my database that is included there, humanize it so it cannot be detected as AI, fix errors so it can run properly
