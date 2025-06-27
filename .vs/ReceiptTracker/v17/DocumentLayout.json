@@ -3,48 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\ReceiptTracker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{80FFAD2D-1515-40D1-BC10-5FAB103E126B}|ReceiptTracker\\ReceiptTracker.csproj|c:\\users\\user\\source\\repos\\receipttracker\\receipttracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80FFAD2D-1515-40D1-BC10-5FAB103E126B}|ReceiptTracker\\ReceiptTracker.csproj|solutionrelative:receipttracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{35742ED1-DE6E-453F-A3B5-528B5CE7C102}|ReceiptDataLayer\\ReceiptDataLayer.csproj|c:\\users\\user\\source\\repos\\receipttracker\\receiptdatalayer\\dbreceiptinfos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35742ED1-DE6E-453F-A3B5-528B5CE7C102}|ReceiptDataLayer\\ReceiptDataLayer.csproj|solutionrelative:receiptdatalayer\\dbreceiptinfos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35742ED1-DE6E-453F-A3B5-528B5CE7C102}|ReceiptDataLayer\\ReceiptDataLayer.csproj|c:\\users\\user\\source\\repos\\receipttracker\\receiptdatalayer\\dbreceiptdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35742ED1-DE6E-453F-A3B5-528B5CE7C102}|ReceiptDataLayer\\ReceiptDataLayer.csproj|solutionrelative:receiptdatalayer\\dbreceiptdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{26C9D802-89D3-4D4F-B0FC-CF8AA150C11C}|ReceiptCommon\\ReceiptCommon.csproj|c:\\users\\user\\source\\repos\\receipttracker\\receiptcommon\\dbinfos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26C9D802-89D3-4D4F-B0FC-CF8AA150C11C}|ReceiptCommon\\ReceiptCommon.csproj|solutionrelative:receiptcommon\\dbinfos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{26C9D802-89D3-4D4F-B0FC-CF8AA150C11C}|ReceiptCommon\\ReceiptCommon.csproj|c:\\users\\user\\source\\repos\\receipttracker\\receiptcommon\\receiptaccounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{26C9D802-89D3-4D4F-B0FC-CF8AA150C11C}|ReceiptCommon\\ReceiptCommon.csproj|solutionrelative:receiptcommon\\receiptaccounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35742ED1-DE6E-453F-A3B5-528B5CE7C102}|ReceiptDataLayer\\ReceiptDataLayer.csproj|c:\\users\\user\\source\\repos\\receipttracker\\receiptdatalayer\\ireceiptaccounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35742ED1-DE6E-453F-A3B5-528B5CE7C102}|ReceiptDataLayer\\ReceiptDataLayer.csproj|solutionrelative:receiptdatalayer\\ireceiptaccounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BFA504A-621A-48C7-8EC4-5973DE16A501}|ReceiptLogic\\ReceiptLogic.csproj|c:\\users\\user\\source\\repos\\receipttracker\\receiptlogic\\receiptbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BFA504A-621A-48C7-8EC4-5973DE16A501}|ReceiptLogic\\ReceiptLogic.csproj|solutionrelative:receiptlogic\\receiptbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35742ED1-DE6E-453F-A3B5-528B5CE7C102}|ReceiptDataLayer\\ReceiptDataLayer.csproj|c:\\users\\user\\source\\repos\\receipttracker\\receiptdatalayer\\receiptdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35742ED1-DE6E-453F-A3B5-528B5CE7C102}|ReceiptDataLayer\\ReceiptDataLayer.csproj|solutionrelative:receiptdatalayer\\receiptdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35742ED1-DE6E-453F-A3B5-528B5CE7C102}|ReceiptDataLayer\\ReceiptDataLayer.csproj|c:\\users\\user\\source\\repos\\receipttracker\\receiptdatalayer\\jsonfilereceiptdatas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35742ED1-DE6E-453F-A3B5-528B5CE7C102}|ReceiptDataLayer\\ReceiptDataLayer.csproj|solutionrelative:receiptdatalayer\\jsonfilereceiptdatas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35742ED1-DE6E-453F-A3B5-528B5CE7C102}|ReceiptDataLayer\\ReceiptDataLayer.csproj|c:\\users\\user\\source\\repos\\receipttracker\\receiptdatalayer\\inmemoryreceiptdatas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35742ED1-DE6E-453F-A3B5-528B5CE7C102}|ReceiptDataLayer\\ReceiptDataLayer.csproj|solutionrelative:receiptdatalayer\\inmemoryreceiptdatas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35742ED1-DE6E-453F-A3B5-528B5CE7C102}|ReceiptDataLayer\\ReceiptDataLayer.csproj|c:\\users\\user\\source\\repos\\receipttracker\\receiptdatalayer\\txtfilereceiptdatas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35742ED1-DE6E-453F-A3B5-528B5CE7C102}|ReceiptDataLayer\\ReceiptDataLayer.csproj|solutionrelative:receiptdatalayer\\txtfilereceiptdatas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{35742ED1-DE6E-453F-A3B5-528B5CE7C102}|ReceiptDataLayer\\ReceiptDataLayer.csproj|c:\\users\\user\\source\\repos\\receipttracker\\receiptdatalayer\\dbreceiptdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35742ED1-DE6E-453F-A3B5-528B5CE7C102}|ReceiptDataLayer\\ReceiptDataLayer.csproj|solutionrelative:receiptdatalayer\\dbreceiptdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,24 +22,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DBReceiptinfos.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ReceiptTracker\\ReceiptDataLayer\\DBReceiptinfos.cs",
-              "RelativeDocumentMoniker": "ReceiptDataLayer\\DBReceiptinfos.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\ReceiptTracker\\ReceiptDataLayer\\DBReceiptinfos.cs",
-              "RelativeToolTip": "ReceiptDataLayer\\DBReceiptinfos.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAcwHYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T16:35:34.035Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -81,123 +36,35 @@
               "RelativeDocumentMoniker": "ReceiptDataLayer\\DBReceiptData.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\ReceiptTracker\\ReceiptDataLayer\\DBReceiptData.cs",
               "RelativeToolTip": "ReceiptDataLayer\\DBReceiptData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAuwG8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T17:12:39.409Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "JsonFileReceiptDatas.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ReceiptTracker\\ReceiptDataLayer\\JsonFileReceiptDatas.cs",
-              "RelativeDocumentMoniker": "ReceiptDataLayer\\JsonFileReceiptDatas.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\ReceiptTracker\\ReceiptDataLayer\\JsonFileReceiptDatas.cs",
-              "RelativeToolTip": "ReceiptDataLayer\\JsonFileReceiptDatas.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAIwBEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T10:11:35.57Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ReceiptData.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ReceiptTracker\\ReceiptDataLayer\\ReceiptData.cs",
-              "RelativeDocumentMoniker": "ReceiptDataLayer\\ReceiptData.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\ReceiptTracker\\ReceiptDataLayer\\ReceiptData.cs",
-              "RelativeToolTip": "ReceiptDataLayer\\ReceiptData.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T10:10:14.961Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IReceiptAccounts.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ReceiptTracker\\ReceiptDataLayer\\IReceiptAccounts.cs",
-              "RelativeDocumentMoniker": "ReceiptDataLayer\\IReceiptAccounts.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\ReceiptTracker\\ReceiptDataLayer\\IReceiptAccounts.cs",
-              "RelativeToolTip": "ReceiptDataLayer\\IReceiptAccounts.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T10:03:33.849Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "InMemoryReceiptDatas.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ReceiptTracker\\ReceiptDataLayer\\InMemoryReceiptDatas.cs",
-              "RelativeDocumentMoniker": "ReceiptDataLayer\\InMemoryReceiptDatas.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\ReceiptTracker\\ReceiptDataLayer\\InMemoryReceiptDatas.cs",
-              "RelativeToolTip": "ReceiptDataLayer\\InMemoryReceiptDatas.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAQwE8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T10:03:36.752Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "TxtFileReceiptDatas.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ReceiptTracker\\ReceiptDataLayer\\TxtFileReceiptDatas.cs",
-              "RelativeDocumentMoniker": "ReceiptDataLayer\\TxtFileReceiptDatas.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\ReceiptTracker\\ReceiptDataLayer\\TxtFileReceiptDatas.cs",
-              "RelativeToolTip": "ReceiptDataLayer\\TxtFileReceiptDatas.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T10:02:57.881Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DBinfos.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ReceiptTracker\\ReceiptCommon\\DBinfos.cs",
-              "RelativeDocumentMoniker": "ReceiptCommon\\DBinfos.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\ReceiptTracker\\ReceiptCommon\\DBinfos.cs",
-              "RelativeToolTip": "ReceiptCommon\\DBinfos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T16:44:05.334Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ReceiptAccounts.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ReceiptTracker\\ReceiptCommon\\ReceiptAccounts.cs",
-              "RelativeDocumentMoniker": "ReceiptCommon\\ReceiptAccounts.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\ReceiptTracker\\ReceiptCommon\\ReceiptAccounts.cs",
-              "RelativeToolTip": "ReceiptCommon\\ReceiptAccounts.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T10:02:23.06Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "receiptBL.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ReceiptTracker\\ReceiptLogic\\receiptBL.cs",
-              "RelativeDocumentMoniker": "ReceiptLogic\\receiptBL.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\ReceiptTracker\\ReceiptLogic\\receiptBL.cs",
-              "RelativeToolTip": "ReceiptLogic\\receiptBL.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAQwCsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T16:26:24.906Z",
+              "WhenOpened": "2025-06-27T10:41:24.762Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ReceiptTracker\\ReceiptTracker\\Program.cs",
-              "RelativeDocumentMoniker": "ReceiptTracker\\Program.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\ReceiptTracker\\ReceiptTracker\\Program.cs",
-              "RelativeToolTip": "ReceiptTracker\\Program.cs",
-              "ViewState": "AgIAAJIAAAAAAAAAAAAmwLMAAAANAAAAAAAAAA==",
+              "Title": "DBReceiptinfos.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ReceiptTracker\\ReceiptDataLayer\\DBReceiptinfos.cs",
+              "RelativeDocumentMoniker": "ReceiptDataLayer\\DBReceiptinfos.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\ReceiptTracker\\ReceiptDataLayer\\DBReceiptinfos.cs",
+              "RelativeToolTip": "ReceiptDataLayer\\DBReceiptinfos.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAIwB8AAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T16:25:45.505Z",
+              "WhenOpened": "2025-06-27T08:49:08.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DBinfos.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\ReceiptTracker\\ReceiptCommon\\DBinfos.cs",
+              "RelativeDocumentMoniker": "ReceiptCommon\\DBinfos.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\ReceiptTracker\\ReceiptCommon\\DBinfos.cs*",
+              "RelativeToolTip": "ReceiptCommon\\DBinfos.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T10:45:37.09Z",
               "EditorCaption": ""
             }
           ]
