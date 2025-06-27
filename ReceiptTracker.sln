@@ -11,9 +11,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceiptDataLayer", "Receipt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceiptCommon", "ReceiptCommon\ReceiptCommon.csproj", "{26C9D802-89D3-4D4F-B0FC-CF8AA150C11C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "loginforms", "loginforms\loginforms.csproj", "{D3FBA09B-8BBD-4B5C-9DB0-E2A731C11868}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceiptController", "ReceiptController\ReceiptController.csproj", "{BE36592A-1BCE-49BA-9157-640970A1979E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceiptWindowsForm", "ReceiptWindowsForm\ReceiptWindowsForm.csproj", "{D4F3A42D-D1B8-40CA-A4D8-D966F06852A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		ReceiptWindowsForm\bin\Debug\net8.0-windows\maindbbackground.jpg = ReceiptWindowsForm\bin\Debug\net8.0-windows\maindbbackground.jpg
+		..\..\..\Pictures\receiptbackround.jpeg = ..\..\..\Pictures\receiptbackround.jpeg
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,14 +43,14 @@ Global
 		{26C9D802-89D3-4D4F-B0FC-CF8AA150C11C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26C9D802-89D3-4D4F-B0FC-CF8AA150C11C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26C9D802-89D3-4D4F-B0FC-CF8AA150C11C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D3FBA09B-8BBD-4B5C-9DB0-E2A731C11868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D3FBA09B-8BBD-4B5C-9DB0-E2A731C11868}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D3FBA09B-8BBD-4B5C-9DB0-E2A731C11868}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D3FBA09B-8BBD-4B5C-9DB0-E2A731C11868}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BE36592A-1BCE-49BA-9157-640970A1979E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BE36592A-1BCE-49BA-9157-640970A1979E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE36592A-1BCE-49BA-9157-640970A1979E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE36592A-1BCE-49BA-9157-640970A1979E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4F3A42D-D1B8-40CA-A4D8-D966F06852A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4F3A42D-D1B8-40CA-A4D8-D966F06852A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4F3A42D-D1B8-40CA-A4D8-D966F06852A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4F3A42D-D1B8-40CA-A4D8-D966F06852A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
