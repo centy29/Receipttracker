@@ -39,7 +39,7 @@ namespace ReceiptDataLayer
         }
 
         public string Getusername(string pin)
-        { // method for the pin gets the name in the account
+        { // method for the pin to get the name in the account
             var allaccounts = Receiptacc.GetAccounts();
             foreach (var accounts in allaccounts)
             {
