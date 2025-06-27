@@ -11,7 +11,7 @@ namespace ReceiptDataLayer
 {
      public class DBReceiptData : IReceiptAccounts {
 
-        static string connectionString   // Connection string for SQL Server connection
+        static string connectionString   // SQL Server connector
       = "Data Source =centy\\SQLEXPRESS; Initial Catalog = DBReceiptDatas; Integrated Security = True; TrustServerCertificate=True;";
 
         static SqlConnection sqlConnection;
@@ -21,7 +21,7 @@ namespace ReceiptDataLayer
         }
         public List<ReceiptAccounts> accounts = new List<ReceiptAccounts>();
 
-        public List<ReceiptAccounts> GetAccounts()  // Method to retrieve all accounts from the Receipt table
+        public List<ReceiptAccounts> GetAccounts()  // to retrive all account in the table
         {
             string selectQuery = "SELECT Pin, Name FROM Receipt";
             SqlCommand command = new SqlCommand(selectQuery, sqlConnection);
@@ -106,6 +106,36 @@ namespace ReceiptDataLayer
 
             return name;
         }
+        public string GetNameByPin(string pin)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                string query = "SELECT name FROM Receipt WHERE pin = @pin";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@pin", pin);
+
+                conn.Open();
+                object result = cmd.ExecuteScalar();
+                return result != null ? result.ToString() : null;
+            }
+        }
+
+        public bool RegisterAccount(string name, string pin)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                string query = "INSERT INTO Receipt (name, pin) VALUES (@name, @pin)";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@name", name);
+                cmd.Parameters.AddWithValue("@pin", pin);
+
+                conn.Open();
+                int rowsAffected = cmd.ExecuteNonQuery();
+                return rowsAffected > 0;
+            }
+        }
+
+
 
     }
 }
