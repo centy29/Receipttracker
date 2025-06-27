@@ -53,7 +53,7 @@ namespace ReceiptDataLayer
             });
         }
 
-        public bool ValidateAccount(string pin)// validates the pin of the accounts that is in the list
+        public bool ValidateAccount(string pin)// validates the pin of the accounts that is on the list
         {
             foreach (var account in accounts)
             {
@@ -65,7 +65,7 @@ namespace ReceiptDataLayer
             return false;
         }
         public string Getusername(string pin)
-        { // method for the pin gets the name in the account
+        { // method for the pin get the name in the account
 
             foreach (var account in accounts)
             {
