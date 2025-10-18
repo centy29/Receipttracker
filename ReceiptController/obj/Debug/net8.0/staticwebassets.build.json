@@ -1,12 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "ufhK82I6ZZ1orSJWqsgLEV/luzr/dnuHEbx3ae/Ljqs=",
-  "Source": "ReceiptController",
-  "BasePath": "_content/ReceiptController",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
-}
+{"Version":1,"Hash":"ufhK82I6ZZ1orSJWqsgLEV/luzr/dnuHEbx3ae/Ljqs=","Source":"ReceiptController","BasePath":"_content/ReceiptController","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}
