@@ -34,6 +34,9 @@
         private TextBox textBoxAddress;
         private TextBox textBoxTin;
         private TextBox textBoxAmount;
+        private Button emailButton;
+
+
 
         private void InitializeComponent()
         {
@@ -42,6 +45,7 @@
             button3 = new Button();
             button4 = new Button();
             button5 = new Button();
+            
             label1 = new Label();
             groupBox1 = new GroupBox();
             textBoxInvoice = new TextBox();
@@ -238,10 +242,25 @@
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
+
+            // emailButton
+            emailButton = new Button();
+            emailButton.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            emailButton.Location = new Point(54, 60);
+            emailButton.Name = "emailButton";
+            emailButton.Size = new Size(129, 23);
+            emailButton.TabIndex = 11;
+            emailButton.Text = "SEND EMAIL";
+            emailButton.UseVisualStyleBackColor = true;
+            emailButton.Click += sendEmailBtn;
+
+            Controls.Add(emailButton);
+
+
         }
 
         #endregion
-
+        private System.Windows.Forms.Button btnEmail;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
