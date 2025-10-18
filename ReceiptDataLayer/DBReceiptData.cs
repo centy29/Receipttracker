@@ -12,7 +12,7 @@ namespace ReceiptDataLayer
      public class DBReceiptData : IReceiptAccounts {
 
         static string connectionString   // SQL Server connector
-      = "Data Source =centy\\SQLEXPRESS; Initial Catalog = DBReceiptDatas; Integrated Security = True; TrustServerCertificate=True;";
+      = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=DBReceiptDatas;Integrated Security=True;TrustServerCertificate=True;";
 
         static SqlConnection sqlConnection;
     
@@ -110,7 +110,7 @@ namespace ReceiptDataLayer
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                string query = "SELECT name FROM Receipt WHERE pin = @pin";
+                string query = "SELECT name FROM Users WHERE pin = @pin";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@pin", pin);
 
