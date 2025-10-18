@@ -1,7 +1,20 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\ReceiptTracker\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\vince\\source\\repos\\Receipttracker\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{35742ED1-DE6E-453F-A3B5-528B5CE7C102}|ReceiptDataLayer\\ReceiptDataLayer.csproj|c:\\users\\vince\\source\\repos\\receipttracker\\receiptdatalayer\\dbreceiptdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35742ED1-DE6E-453F-A3B5-528B5CE7C102}|ReceiptDataLayer\\ReceiptDataLayer.csproj|solutionrelative:receiptdatalayer\\dbreceiptdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4F3A42D-D1B8-40CA-A4D8-D966F06852A3}|ReceiptWindowsForm\\ReceiptWindowsForm.csproj|c:\\users\\vince\\source\\repos\\receipttracker\\receiptwindowsform\\maindbform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4F3A42D-D1B8-40CA-A4D8-D966F06852A3}|ReceiptWindowsForm\\ReceiptWindowsForm.csproj|solutionrelative:receiptwindowsform\\maindbform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4F3A42D-D1B8-40CA-A4D8-D966F06852A3}|ReceiptWindowsForm\\ReceiptWindowsForm.csproj|c:\\users\\vince\\source\\repos\\receipttracker\\receiptwindowsform\\maindbform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4F3A42D-D1B8-40CA-A4D8-D966F06852A3}|ReceiptWindowsForm\\ReceiptWindowsForm.csproj|solutionrelative:receiptwindowsform\\maindbform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +22,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DBReceiptData.cs",
+              "DocumentMoniker": "C:\\Users\\vince\\source\\repos\\Receipttracker\\ReceiptDataLayer\\DBReceiptData.cs",
+              "RelativeDocumentMoniker": "ReceiptDataLayer\\DBReceiptData.cs",
+              "ToolTip": "C:\\Users\\vince\\source\\repos\\Receipttracker\\ReceiptDataLayer\\DBReceiptData.cs",
+              "RelativeToolTip": "ReceiptDataLayer\\DBReceiptData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHAAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T06:05:26.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainDBForm.cs",
+              "DocumentMoniker": "C:\\Users\\vince\\source\\repos\\Receipttracker\\ReceiptWindowsForm\\MainDBForm.cs",
+              "RelativeDocumentMoniker": "ReceiptWindowsForm\\MainDBForm.cs",
+              "ToolTip": "C:\\Users\\vince\\source\\repos\\Receipttracker\\ReceiptWindowsForm\\MainDBForm.cs",
+              "RelativeToolTip": "ReceiptWindowsForm\\MainDBForm.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAwwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T04:40:00.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainDBForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\vince\\source\\repos\\Receipttracker\\ReceiptWindowsForm\\MainDBForm.Designer.cs",
+              "RelativeDocumentMoniker": "ReceiptWindowsForm\\MainDBForm.Designer.cs",
+              "ToolTip": "C:\\Users\\vince\\source\\repos\\Receipttracker\\ReceiptWindowsForm\\MainDBForm.Designer.cs",
+              "RelativeToolTip": "ReceiptWindowsForm\\MainDBForm.Designer.cs",
+              "ViewState": "AgIAAPEAAAAAAAAAAAD4vyUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T04:15:17.587Z"
             }
           ]
         }
