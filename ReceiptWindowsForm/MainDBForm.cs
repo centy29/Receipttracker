@@ -1,7 +1,8 @@
-﻿using System;
-using System.Windows.Forms;
-using ReceiptCommon;
+﻿using ReceiptCommon;
 using ReceiptDataLayer;
+using recieptlogicemail;
+using System;
+using System.Windows.Forms;
 
 namespace ReceiptWindowsForm
 {
@@ -108,6 +109,20 @@ namespace ReceiptWindowsForm
             dataGridView1.DataSource = null; 
             LoadReceipts(); 
             MessageBox.Show("Receipt history successfully loaded.");
+        }
+
+        private void sendEmailBtn(object sender, EventArgs e)
+        {
+            EmailLogic emailLogic = new EmailLogic();
+
+            ReceiptEmail email = new ReceiptEmail();
+            email.FromEmail = "vincesmoke666@gmail.com";
+            email.ToEmail = "vincesmoke666@gmail.com";
+            email.Subject = "Receipt Notification";
+            email.Body = "Your receipt has been successfully saved!";
+
+            string result = emailLogic.SendEmail(email);
+            MessageBox.Show(result, "Email Notification");
         }
 
 
