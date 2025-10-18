@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\vince\\source\\repos\\Receipttracker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{35742ED1-DE6E-453F-A3B5-528B5CE7C102}|ReceiptDataLayer\\ReceiptDataLayer.csproj|c:\\users\\vince\\source\\repos\\receipttracker\\receiptdatalayer\\dbreceiptdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35742ED1-DE6E-453F-A3B5-528B5CE7C102}|ReceiptDataLayer\\ReceiptDataLayer.csproj|solutionrelative:receiptdatalayer\\dbreceiptdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vince\\source\\repos\\Receipttracker\\ReceiptDataLayer\\DBReceiptData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ReceiptDataLayer\\DBReceiptData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4F3A42D-D1B8-40CA-A4D8-D966F06852A3}|ReceiptWindowsForm\\ReceiptWindowsForm.csproj|c:\\users\\vince\\source\\repos\\receipttracker\\receiptwindowsform\\maindbform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4F3A42D-D1B8-40CA-A4D8-D966F06852A3}|ReceiptWindowsForm\\ReceiptWindowsForm.csproj|solutionrelative:receiptwindowsform\\maindbform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vince\\source\\repos\\Receipttracker\\ReceiptWindowsForm\\MainDBForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ReceiptWindowsForm\\MainDBForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4F3A42D-D1B8-40CA-A4D8-D966F06852A3}|ReceiptWindowsForm\\ReceiptWindowsForm.csproj|c:\\users\\vince\\source\\repos\\receipttracker\\receiptwindowsform\\maindbform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4F3A42D-D1B8-40CA-A4D8-D966F06852A3}|ReceiptWindowsForm\\ReceiptWindowsForm.csproj|solutionrelative:receiptwindowsform\\maindbform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vince\\source\\repos\\Receipttracker\\ReceiptWindowsForm\\MainDBForm.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ReceiptWindowsForm\\MainDBForm.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
