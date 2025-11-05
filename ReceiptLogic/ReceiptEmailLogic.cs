@@ -17,7 +17,7 @@ namespace recieptlogicemail
                     EnableSsl = true
                 };
 
-                client.Send(info.FromEmail, info.ToEmail, info.Subject, info.Body);
+                client.Send(info.FromName, info.FromEmail, info.Subject, info.Body);
                 return "Email Sent Successfully!";
             }
             catch (Exception ex)

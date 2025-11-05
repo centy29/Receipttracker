@@ -14,8 +14,8 @@ namespace ReceiptDataLayer
         {
             //Receiptacc = new InMemoryReceiptDatas();
             // Receiptacc = new TxtFileReceiptDatas();
-            //Receiptacc = new JsonFileReceiptDatas();
-            Receiptacc = new DBReceiptData();
+            Receiptacc = new JsonFileReceiptDatas();
+            //Receiptacc = new DBReceiptData();
         }
         public List<ReceiptAccounts> GetAllAccounts()
         {

@@ -8,14 +8,14 @@ namespace ReceiptDataLayer
 {
     public class DBReceiptinfo
     {
-        private readonly string connectionString = "Data Source=centy\\SQLEXPRESS;Initial Catalog=DBReceiptDatas;Integrated Security=True;TrustServerCertificate=True;";
+        private readonly string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=DBReceiptDatas;Integrated Security=True;TrustServerCertificate=True;";
 
         public List<DBinfos> GetAllRecieptInfos()
         {
             var infos = new List<DBinfos>();
             using (var conn = new SqlConnection(connectionString))
             {
-                var query = "SELECT invoice, brand, address, tin, amount FROM ReceiptsInfo";
+                var query = "SELECT invoice, brand, address, tin, amount FROM Receipts";
                 var command = new SqlCommand(query, conn);
 
                 conn.Open();
@@ -41,7 +41,7 @@ namespace ReceiptDataLayer
         {
             using (var conn = new SqlConnection(connectionString))
             {
-                var query = "SELECT invoice, brand, address, tin, amount FROM ReceiptsInfo WHERE invoice = @invoice";
+                var query = "SELECT invoice, brand, address, tin, amount FROM Receipts WHERE invoice = @invoice";
                 var command = new SqlCommand(query, conn);
                 command.Parameters.AddWithValue("@invoice", invoice);
 
@@ -68,7 +68,7 @@ namespace ReceiptDataLayer
         {
             using (var conn = new SqlConnection(connectionString))
             {
-                var query = "INSERT INTO ReceiptsInfo (invoice, brand, address, tin, amount) VALUES (@invoice, @brand, @address, @tin, @amount)";
+                var query = "INSERT INTO Receipts (invoice, brand, address, tin, amount) VALUES (@invoice, @brand, @address, @tin, @amount)";
                 var command = new SqlCommand(query, conn);
 
                 command.Parameters.AddWithValue("@invoice", receipt.invoice);
@@ -86,7 +86,7 @@ namespace ReceiptDataLayer
         {
             using (var conn = new SqlConnection(connectionString))
             {
-                var query = "UPDATE ReceiptsInfo SET brand = @brand, address = @address, tin = @tin, amount = @amount WHERE invoice = @invoice";
+                var query = "UPDATE Receipts SET brand = @brand, address = @address, tin = @tin, amount = @amount WHERE invoice = @invoice";
                 var command = new SqlCommand(query, conn);
 
                 command.Parameters.AddWithValue("@invoice", receipt.invoice);
@@ -104,7 +104,7 @@ namespace ReceiptDataLayer
         {
             using (var conn = new SqlConnection(connectionString))
             {
-                var query = "DELETE FROM ReceiptsInfo WHERE invoice = @invoice";
+                var query = "DELETE FROM Receipts WHERE invoice = @invoice";
                 var command = new SqlCommand(query, conn);
                 command.Parameters.AddWithValue("@invoice", invoice);
 

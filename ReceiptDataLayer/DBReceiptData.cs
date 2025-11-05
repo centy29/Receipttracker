@@ -23,7 +23,7 @@ namespace ReceiptDataLayer
 
         public List<ReceiptAccounts> GetAccounts()  // to retrive all account in the table
         {
-            string selectQuery = "SELECT Pin, Name FROM Receipt";
+            string selectQuery = "SELECT Pin, Name FROM Users";
             SqlCommand command = new SqlCommand(selectQuery, sqlConnection);
 
             sqlConnection.Open();
